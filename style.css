@@ -1,0 +1,974 @@
+/* ---Imported Font--- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rokkitt:wght@200&display=swap');
+
+/* ----------------------------CSS RESET BEGIN-------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------------------------------------CSS RESET END----------------------------------------- */
+
+
+
+
+
+
+
+/* -----------------------------------Default Styles Begin------------------------------------- */
+body {
+	font-family: Poppins;
+	background-color: #fefefe;
+	/* line-height: 25px;
+	letter-spacing: 1px; */
+}
+
+
+/* ------------------------------------Default Styles End-------------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------Animations Start-------------------------------------- */
+
+@keyframes showContent {
+	from {
+		transform: translateY(50px);
+		filter: blur(30px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+		filter: blur(0);
+	}
+}
+
+
+@keyframes text {
+	from {
+		/* stroke: transparent; */
+		fill: transparent;
+		stroke-dashoffset: 5100;
+		opacity: 1;
+	}
+
+	to {
+		/* stroke: black; */
+		fill: black;
+		stroke-dashoffset: 2100;
+		opacity: 1;
+	}
+
+}
+
+@keyframes typing {
+    40%, 60%{
+        left: calc(100% - 60px);
+    }
+
+    100%{
+        left: calc(100%);
+		border-left: #fefefe;
+    }
+}
+
+@keyframes position {
+	from {
+		transform: translate(-6.6%, -5%) scale(128%);
+		filter: blur(5px);
+		z-index: 11;
+		opacity: 1;
+	}
+}
+
+keyframes position2 {
+	from {
+		opacity: 0;
+	}
+}
+
+
+@keyframes positionNext {
+	from {
+		transform: translate(-5100%, -5%) scale(1.5);
+		filter: blur(10px);
+		z-index: 10;
+		opacity: 1;
+	}
+
+}
+
+@keyframes positionPrev {
+	from {
+		transform: translate(5100%, 5%) scale(1.5);
+		filter: blur(10px);
+		z-index: 10;
+		opacity: 1;
+	}
+
+}
+
+@keyframes positionNext1 {
+
+	from {
+		transform: translate(73%, -17%) scale(0.6);
+		filter: blur(5px) drop-shadow(1px 15px 25px rgb(52, 52, 52));
+		/* z-index: 8; */
+		opacity: 1;
+	}
+}
+
+@keyframes positionPrev1 {
+
+	from {
+		transform: translate(-17%, -50%) scale(130%);
+		/* filter: blur(2.5px) drop-shadow(1px 15px 25px rgb(52, 52, 52)); */
+		/* z-index: 8; */
+		opacity: 1;
+	}
+}
+
+@keyframes positionNext2 {
+	from {
+		transform: translate(95%, -29%) scale(0.4);
+		filter: blur(9px) drop-shadow(22px 10px 35px rgb(161, 161, 161));
+		/* z-index: 7; */
+		opacity: 1;
+	}
+}
+
+@keyframes positionPrev2 {
+	from {
+		transform: translate(49%, -5%) scale(76%);
+		filter: blur(2.5px) drop-shadow(10px 10px 10px rgb(53, 53, 53));
+		/* z-index: 9; */
+		opacity: 1;
+	}
+}
+
+@keyframes positionNext3 {
+	from {
+		transform: translate(110%, -36%) scale(0.3);
+		filter: blur(12px) drop-shadow(22px 10px 25px rgb(178, 176, 176));
+		/* z-index: 6; */
+		opacity: 1;
+	}
+}
+
+@keyframes positionPrev3 {
+	from {
+		transform: translate(73%, -17%) scale(0.6);
+		filter: blur(5px) drop-shadow(1px 15px 25px rgb(52, 52, 52));
+		/* z-index: 8; */
+		opacity: 1;
+	}
+}
+
+@keyframes positionNext4 {
+	from {
+		transform: translate(130%, -56%) scale(0.3);
+		filter: blur(12px) drop-shadow(22px 10px 25px rgb(178, 176, 176));
+	}
+}
+
+@keyframes positionPrev4 {
+	from {
+		transform: translate(95%, -29%) scale(0.4);
+		filter: blur(9px) drop-shadow(22px 10px 35px rgb(161, 161, 161));
+		/* z-index: 7; */
+		opacity: 1;
+	}
+}
+
+
+
+
+
+@keyframes floating {
+	0% {
+		transform: translate(17%, -52%) scale(130%);
+	}
+
+	50% {
+		transform: translate(17%, -50.9%) scale(130%);
+	}
+
+	100% {
+		transform: translate(17%, -52%) scale(130%);
+	}
+}
+
+
+@keyframes floating1 {
+	0% {
+		transform: translate(49%, -5%) scale(76%);
+	}
+
+	50% {
+		transform: translate(49%, -4%) scale(76%);
+	}
+
+	100% {
+		transform: translate(49%, -5%) scale(76%);
+	}
+}
+
+@keyframes floating2 {
+	0% {
+		transform: translate(73%, -14.6%) scale(0.6);
+	}
+
+	50% {
+		transform: translate(73%, -12.9%) scale(0.6);
+	}
+
+	100% {
+		transform: translate(73%, -14.6%) scale(0.6);
+	}
+}
+
+@keyframes floating3 {
+	0% {
+		transform: translate(95%, -25.7%) scale(0.4);
+	}
+
+	50% {
+		transform: translate(95%, -23.9%) scale(0.4);
+	}
+
+	100% {
+		transform: translate(95%, -25.7%) scale(0.4);
+	}
+}
+
+@keyframes floating4 {
+	0% {
+		transform: translate(110%, -33%) scale(0.3);
+	}
+
+	50% {
+		transform: translate(110%, -30.9%) scale(0.3);
+	}
+
+	100% {
+		transform: translate(110%, -33%) scale(0.3);
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(17%, -50%) scale(130%) rotate(2deg);
+	}
+
+	25% {
+		transform: translate(17%, -50%) scale(130%) rotate(3.5deg);
+	}
+
+	50% {
+		transform: translate(17%, -50%) scale(130%) rotate(1deg);
+	}
+
+	75% {
+		transform: translate(17%, -50%) scale(130%) rotate(-2.9deg);
+	}
+
+	100% {
+		transform: translate(17%, -50%) scale(130%) rotate(0deg);
+	}
+}
+
+
+/* ------------------------------Animations End---------------------------------------- */
+
+
+
+
+
+
+
+/* -------------------------------------Nav Styles------------------------------------ */
+
+header{
+	position: relative;
+	/* z-index: 13; */
+}
+
+a {
+	text-decoration: none;
+	color: #555;
+	padding: 10.5px;
+}
+
+a:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: -2.5px;
+	content: "";
+	left: 8px;
+	display: block;
+	height: 1.5px;
+	position: relative;
+	background: rgba(0, 0, 0, 0.677);
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+	/* border-radius: 13px; */
+}
+
+a:hover:after {
+	width: 93%;
+	border-radius: 50%;
+	border: 1px solid rgb(121, 121, 121);
+	
+}
+
+a:hover{
+	font-weight: 500;
+}
+
+#navBar {
+	display: flex;
+	align-items: center;
+	height: 55px;
+	width: 640px;
+	max-width: 90%;
+	margin: auto;
+	top: 15px;
+	padding: 25px;
+	box-sizing: border-box;
+	box-shadow: .5px 2px 3px .8px #d4d4d4;
+	border-radius: 5px;
+	background-color: #fefefe;
+	position: relative;
+	z-index: 2;
+	letter-spacing: .8px;
+}
+
+
+#navLinks {
+	position: relative;
+	display: inline-flex;
+	position: relative;
+	margin-left: 295px;
+	font-weight: 300;
+	bottom: -11.5px;
+	font-size: 18.5px;
+}
+
+#logo {
+	margin-left: 45px;
+}
+
+.svg {
+	position: relative;
+	top: 65.5px;
+	right: -45px;
+	height: 1px;
+	width: 1px;
+	/* border: 1px solid #ccc; */
+	transform: scale(370);
+	overflow: hidden;
+	stroke: black;
+	fill: transparent;
+	stroke-width: 15px;
+	stroke-dasharray: 5100;
+	animation: text 5.5s 1.5s ease-out forwards;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 2;
+}
+
+.filler {
+	display: flex;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	top: -30px;
+	left: -185px;
+	position: relative;
+	height: 35px;
+	width: 200px;
+	z-index: 2;
+	text-align: center;
+}
+
+.fillerFont {
+	color: transparent;
+	animation: showContent 2s;
+}
+
+
+
+/* -----------------------------------Nav Styles End------------------------------------ */
+
+
+
+
+
+
+/* -----------------------------Carousel Styles Begin----------------------------------- */
+
+.carousel {
+	margin-top: -50px;
+	height: 900px;
+	overflow: hidden;
+	position: relative;
+	opacity: 0;
+	animation: showContent 0.5s .2s ease-in-out 1 forwards;
+}
+
+.list {
+	position: absolute;
+	top: 9%;
+	left: 45%;
+	transform: translateX(-50%);
+	height: 70%;
+	width: 1140px;
+	max-width: 90%;
+
+}
+
+.item {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 70%;
+	height: 100%;
+	font-size: 15px;
+	/* font-weight: 100; */
+}
+
+.item img {
+	width: 45%;
+	position: absolute;
+	right: 0;
+	top: 60%;
+	transform: translateY(-50%) translateX(11%);
+	border-radius: 15px;
+	filter: blur(1);
+}
+
+.detail {
+	opacity: 0;
+	pointer-events: none;
+
+}
+
+.intro {
+	position: absolute;
+	top: 50%;
+	transform: translate(-10%, -5%);
+	width: 400px;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.item:nth-child(2) .intro {
+	opacity: 1;
+	pointer-events: auto;
+	transition: opacity 0.5s;
+}
+
+.item:nth-child(n + 6) {
+	opacity: 0;
+	pointer-events: none;
+
+}
+
+.item:nth-child(1) {
+	transform: translate(5000%, -95%) scale(128%);
+	filter: blur(5px);
+	z-index: 11;
+	opacity: 1;
+	pointer-events: none;
+	animation: position 1s;
+}
+
+.prev .item:nth-child(1) {
+	transform: translate(-6.6%, -5%) scale(128%);
+	filter: blur(5px);
+	z-index: 12;
+	opacity: 0;
+	pointer-events: none;
+	animation: position2 11s;
+}
+
+
+.item:nth-child(2) img {
+
+	transform: translate(17%, -50%) scale(130%);
+	z-index: 10;
+	height: 550px;
+	width: 355px;
+	border: 2px solid rgba(215, 215, 215, 0.499);
+	border-radius: 20px;
+	animation: positionNext 0.2s ease-in-out 1 forwards, shake 0.04s 0.20s ease-out 7,
+		floating 5s 0.7s ease-in-out infinite;
+}
+
+.prev .item:nth-child(2) img {
+
+	transform: translate(17%, -50%) scale(130%);
+	z-index: 10;
+	height: 560px;
+	width: 355px;
+	border: 2px solid rgba(215, 215, 215, 0.499);
+	border-radius: 20px;
+	animation: positionPrev 0.2s ease-in-out 1 forwards, shake 0.04s 0.20s ease-out 7,
+		floating 5s 0.7s ease-in-out infinite;
+}
+
+
+.item:nth-child(3) {
+	transform: translate(49%, -5%) scale(76%);
+	filter: blur(2.5px) drop-shadow(10px 10px 10px rgb(53, 53, 53));
+	z-index: 9;
+	opacity: 1;
+	animation: floating1 7s ease-in-out infinite, positionNext .03s, positionNext1 .5s ease-in;
+}
+
+.prev .item:nth-child(3) {
+	transform: translate(49%, -5%) scale(76%);
+	filter: blur(2.5px) drop-shadow(10px 10px 10px rgb(53, 53, 53));
+	z-index: 9;
+	opacity: 1;
+	animation: floating1 7s ease-in-out infinite, positionPrev1 .5s ease-in;
+}
+
+
+.item:nth-child(3) img {
+	border: 1px solid rgb(161, 161, 161);
+	border-radius: 50px;
+	/* opacity: .5; */
+}
+
+.item:nth-child(4) {
+	transform: translate(73%, -17%) scale(0.6);
+	filter: blur(5px) drop-shadow(1px 15px 25px rgb(52, 52, 52));
+	z-index: 8;
+	opacity: 1;
+	animation: floating2 7.3s ease-in-out infinite, positionNext2 .6s ease-in;
+}
+
+.prev .item:nth-child(4) {
+	transform: translate(73%, -17%) scale(0.6);
+	filter: blur(5px) drop-shadow(1px 15px 25px rgb(52, 52, 52));
+	z-index: 8;
+	opacity: 1;
+	animation: floating2 7.3s ease-in-out infinite, positionPrev2 .6s ease-in;
+}
+
+.item:nth-child(4) img {
+	/* border: 1px solid rgb(0, 0, 0); */
+	border-radius: 50px;
+}
+
+.item:nth-child(5) {
+	transform: translate(95%, -29%) scale(0.4);
+	filter: blur(9px) drop-shadow(22px 10px 35px rgb(161, 161, 161));
+	z-index: 7;
+	opacity: 1;
+	animation: floating3 7.2s ease-in-out infinite, positionNext3 .7s ease-in;
+}
+
+.prev .item:nth-child(5) {
+	transform: translate(95%, -29%) scale(0.4);
+	filter: blur(9px) drop-shadow(22px 10px 35px rgb(161, 161, 161));
+	z-index: 7;
+	opacity: 1;
+	animation: floating3 7.2s ease-in-out infinite, positionPrev3 .7s ease-in;
+}
+
+.item:nth-child(5) img {
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 50px;
+}
+
+.item:nth-child(6) {
+	transform: translate(110%, -36%) scale(0.3);
+	filter: blur(12px) drop-shadow(22px 10px 25px rgb(178, 176, 176));
+	z-index: 6;
+	opacity: 1;
+	animation: floating4 6.9s ease-in-out infinite reverse, positionNext4 .7s ease-in;
+}
+
+.prev .item:nth-child(6) {
+	transform: translate(110%, -36%) scale(0.3);
+	filter: blur(12px) drop-shadow(22px 10px 25px rgb(178, 176, 176));
+	z-index: 6;
+	opacity: 1;
+	animation: floating4 6.9s ease-in-out infinite reverse, positionPrev4 .7s ease-in;
+}
+
+.item:nth-child(6) img {
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 50px;
+}
+
+
+
+/* -----------------------------Carousel Styles End------------------------------------- */
+
+
+
+
+
+
+/* ------------------------------Buttons Styles Begin----------------------------------- */
+
+.arrows {
+	position: absolute;
+	bottom: 10px;
+	width: 1100px;
+	max-width: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.seeMore {
+	font-family: Poppins;
+	font-weight: 300;
+	border: none;
+	height: 30px;
+	width: 105px;
+	border-radius: 125px;
+	border-bottom: 1px solid #b2b2b2;
+	position: relative;
+	left: -2px;
+	cursor: pointer;
+}
+
+#next,
+#prev {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	font-family: Poppins;
+	font-weight: 200;
+	border: none;
+	/* box-shadow: 1px 1px 3px 0.5px rgb(145, 145, 145); */
+	border-bottom: 1px solid #b2b2b2;
+	cursor: pointer;
+}
+
+#back {
+	font-family: Poppins;
+	font-weight: 300;
+	border: none;
+	height: 35px;
+	width: 135px;
+	border-radius: 125px;
+	border-bottom: 1px solid #b2b2b2;
+	opacity: 0;
+	pointer-events: none;
+}
+
+
+/* ------------------------------Buttons Styles End------------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------Portfolio Page Intro Styles Begin------------------------------------- */
+
+.intro {
+	position: relative;
+	margin-top: -95px;
+}
+
+.title {
+	font-size: 2em;
+	line-height: 0.8em;
+	padding-bottom: 9.5px;
+	position: relative;
+	left: -3px;
+}
+
+
+.topic {
+	font-size: 4em;
+	font-weight: 500;
+	text-wrap: nowrap;
+	padding-bottom: 11.5px;
+	position: relative;
+	left: -3px;
+}
+
+.desc {
+	line-height: 22px;
+	padding-bottom: 15px;
+
+}
+
+
+/* ------------------------------Portfolio Page Intro Styles End--------------------------------------- */
+
+
+
+
+
+
+/* ------------------------------Portfolio Page Description Animation Styles Begin--------------------------------- */
+
+
+.item:nth-child(2) .title,
+.item:nth-child(2) .topic,
+.item:nth-child(2) .desc,
+.item:nth-child(2) .seeMore {
+	opacity: 0;
+	animation: showContent 0.2s .2s ease-in-out 1 forwards;
+}
+
+
+.item:nth-child(2) .topic {
+	animation-delay: 1.3s;
+}
+
+.item:nth-child(2) .desc {
+	animation-delay: 1.5s;
+}
+
+.item:nth-child(2) .seeMore {
+	animation-delay: 1.7s;
+}
+
+/* ------------------------------Portfolio Page Description Animation Styles End----------------------------------- */
+
+
+
+
+
+
+
+
+/* ------------------------------See More Animation Styles Begin----------------------------------- */
+.seeDetail .item:nth-child(3),
+.seeDetail .item:nth-child(4),
+.seeDetail .item:nth-child(5),
+.seeDetail .item:nth-child(6) {
+	left: 100%;
+	transition: left .5s, opacity 1.5s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.seeDetail .item:nth-child(2) img {
+	left: 75%;
+	transition: .3s;
+	width: 52%;
+	height: 100%;
+	top: 63%;
+	border: transparent;
+	filter:drop-shadow(5px 5px 5px rgb(53, 53, 53));
+	
+}
+
+.seeDetail .item:nth-child(2) .intro {
+	opacity: 0;
+	transition: opacity .01ms;
+	pointer-events: none;
+}
+
+.seeDetail #prev,
+.seeDetail #next {
+	transition: .8s;
+	opacity: 0;
+}
+
+.seeDetail #back {
+	position: relative;
+	opacity: 1;
+	top: -15px;
+	left: -390px;
+	pointer-events: all;
+	cursor: pointer;
+}
+
+.seeDetail .item:nth-child(2) .detail {
+	opacity: 1;
+	pointer-events: auto;
+	width: 70%;
+}
+
+
+.seeDetail .options {
+    height: 85px;
+    line-height: 80px;
+    overflow: hidden;
+    margin-top: -58px;
+	
+}
+
+.seeDetail .options li {
+    color: black;
+    font-size: 60px;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+}
+
+.seeDetail .options li span:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fefefe;
+    border-left: 2px solid black;
+    animation: typing 5s steps(36) 1;
+	animation-fill-mode: forwards;
+}
+
+
+/* ------------------------------See More Animation Styles End----------------------------------- */
+
+
+
+/* ------------------------------Go Back Animation Styles Begin----------------------------------- */
+
+
+.goBack .item:nth-child(3),
+.goBack .item:nth-child(4),
+.goBack .item:nth-child(5),
+.goBack .item:nth-child(6) {
+	left: -100%;
+	transition: left .5s, opacity 1.5s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+
+/* ------------------------------Go Back Animation Styles End----------------------------------- */

@@ -1,0 +1,162 @@
+/* ------------------------------- Default Styles Begin----------------------------- */
+
+html {
+    overflow: hidden;
+}
+
+button{
+	cursor: pointer;
+	font-family: Poppins;
+	font-weight: 300;
+	font-size: 1rem;
+    letter-spacing: .9px;
+	border: none;
+	height: 50px;
+	width: 215px;
+	border-radius: 125px;
+	border-bottom: 3px solid #c4c4c4b0;
+	border-top: .1px solid #f0f0f0;
+	background-color: rgba(255, 255, 255, 0.327);
+	position: relative;
+	left: 50%;
+	bottom: -220px;
+}
+
+
+/* ------------------------------- Default Styles End------------------------------ */
+
+
+
+
+
+/* -------------------------------- Animations Begin------------------------------- */
+
+@keyframes slide {
+    100% {
+        top: -320px;
+    }
+}
+
+@keyframes typing {
+    40%, 60%{
+        left: calc(100%);
+    }
+
+    100%{
+        left: 0;
+    }
+}
+
+/* ---------------------------------- Animations End-------------------------------- */
+
+
+
+
+
+
+/* ---------------------------- Typing Text Styles Begin--------------------------- */
+
+.main {
+    display: flex;
+    position: relative;
+    left: 45%;
+    top: 190px;
+    /* pointer-events: none; */
+}
+
+.main .text {
+    font-size: 60px;
+    font-weight: 200;
+    position: relative;
+    top: -8px;
+}
+
+.main .options {
+    margin-left: 15px;
+    height: 85px;
+    line-height: 80px;
+    overflow: hidden;
+
+}
+
+.options li {
+    color: tan;
+    font-size: 60px;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+    animation: slide 20s steps(4) infinite;
+}
+
+.options li span:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fefefe;
+    border-left: 2px solid tan;
+    animation: typing 5s steps(36) infinite;
+}
+
+span{
+    position: relative;
+    color: tan;
+    font-size: 60px;
+    font-weight: 400;
+    top: 1.5px;
+}
+
+
+
+/* ---------------------------- Typing Text Styles End---------------------------- */
+
+
+
+
+
+
+
+/* -------------------------------Body Content Start---------------------------- */
+
+article{
+    display: flex;
+    width: 660px;
+    line-height: 25px;
+    text-wrap: wrap;
+    position: relative;
+    /* just trust me it was like .09 millimeters off */
+    left: 45.1%;
+    top: 190px;
+    letter-spacing: .8px;
+    pointer-events: none;
+    text-align: left;
+}
+
+
+/* --------------------------------Body Content End----------------------------- */
+
+
+
+
+
+
+
+
+/* ---------------------------- Avatar Styles Begin---------------------------- */
+
+spline-viewer {
+    /* width: 100%; */
+    height: 1090px;
+    position: absolute;
+    /* top: -180px; */
+    top: -115px;
+    left: -470px;
+}
+
+.avatar {
+    width: 900px;
+    height: 100%;
+}
+
+/* ---------------------------- Avatar Styles End--------------------------- */
