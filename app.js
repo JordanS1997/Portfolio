@@ -43,5 +43,3 @@ seeMore.forEach(button => {
         carousel.classList.remove('seeDetail');
         
     }
-
-// setTimeout(go, 100000);
