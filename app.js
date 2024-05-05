@@ -50,4 +50,4 @@ back.onclick = function go () {
 };
 
 // Run the carousel cycle once
-intervalId = setInterval(runCarousel, 50); 
+intervalId = setInterval(runCarousel, 25); 
