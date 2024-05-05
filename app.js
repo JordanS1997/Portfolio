@@ -50,4 +50,4 @@ back.onclick = function go () {
 };
 
 // Run the carousel cycle once
-intervalId = setInterval(runCarousel, 50); // Change this value to adjust the speed (in milliseconds)
+intervalId = setInterval(runCarousel, 50); 
