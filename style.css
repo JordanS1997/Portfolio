@@ -410,6 +410,17 @@ keyframes position2 {
 /* ------------------------------Animations End---------------------------------------- */
 
 
+/* ----------------------------------Preloader Styles Start------------------------- */
+#preloader {
+    opacity: 1;
+    transition: opacity 1.5s ease-out;
+}
+
+#preloader.fade-out {
+    opacity: 0;
+	left: 5000px;
+}
+/* ----------------------------------Preloader Styles End--------------------------- */
 
 
 
@@ -573,6 +584,8 @@ a:hover{
 	transform: translateY(-50%) translateX(11%);
 	border-radius: 15px;
 	filter: blur(1);
+	height: 515px;
+	width: 360px;
 }
 
 .detail {
@@ -651,7 +664,7 @@ a:hover{
 	filter: blur(2.5px) drop-shadow(10px 10px 10px rgb(53, 53, 53));
 	z-index: 9;
 	opacity: 1;
-	animation: floating1 7s ease-in-out infinite, positionNext .03s, positionNext1 .5s ease-in;
+	animation: floating1 7s ease-in-out infinite, positionNext .03s;
 }
 
 .prev .item:nth-child(3) {

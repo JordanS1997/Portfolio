@@ -47,9 +47,21 @@ button{
     }
 }
 
+
+
 /* ---------------------------------- Animations End-------------------------------- */
 
 
+/* ----------------------------------Preloader Styles Start------------------------- */
+#preloader {
+    opacity: 1;
+    transition: opacity 1.5s ease-out;
+}
+
+#preloader.fade-out {
+    opacity: 0;
+}
+/* ----------------------------------Preloader Styles End--------------------------- */
 
 
 
