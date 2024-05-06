@@ -8,4 +8,4 @@ var loader = document.getElementById('preloader');
 
 setTimeout(function(){
     document.querySelector('#preloader').classList.add('fade-out');
-}, 3000);
+}, 3150);
