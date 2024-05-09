@@ -50,6 +50,19 @@ button {
 }
 
 
+@keyframes showContent {
+	from {
+		transform: translateY(50px);
+		filter: blur(30px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+		filter: blur(0);
+	}
+}
+
 
 /* ---------------------------------- Animations End-------------------------------- */
 
@@ -150,6 +163,11 @@ span {
 
 /* -------------------------------Body Content Start---------------------------- */
 
+
+#fpcontent{
+    animation:  showContent 0.5s 3.0s ease-in-out 1 forwards;
+}
+
 article {
     display: flex;
     width: 660px;
@@ -183,6 +201,7 @@ spline-viewer {
     /* top: -180px; */
     top: -115px;
     left: -470px;
+    animation:  showContent 0.5s 3.0s ease-in-out 1 forwards;
 }
 
 .avatar {
