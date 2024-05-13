@@ -96,6 +96,34 @@ button {
 
 
 
+/* ----------------------------------Nav Styles Begin------------------------------- */
+
+.svg2{
+    position: relative;
+	top: 65.5px;
+	right: -45px;
+	height: 1px;
+	width: 1px;
+	/* border: 1px solid #ccc; */
+	transform: scale(370);
+	overflow: hidden;
+	stroke: black;
+	fill: transparent;
+	stroke-width: 15px;
+	stroke-dasharray: 5100;
+	animation: text 5.5s 1.7s ease-out forwards;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 2;
+}
+
+/* -----------------------------------Nav Styles End-------------------------------- */
+
+
+
+
+
+
 
 
 /* ---------------------------- Typing Text Styles Begin--------------------------- */
@@ -164,9 +192,7 @@ span {
 /* -------------------------------Body Content Start---------------------------- */
 
 
-#fpcontent{
-    animation:  showContent 0.5s 3.0s ease-in-out 1 forwards;
-}
+
 
 article {
     display: flex;
@@ -174,7 +200,6 @@ article {
     line-height: 25px;
     text-wrap: wrap;
     position: relative;
-    /* just trust me it was like .09 millimeters off */
     left: 45.1%;
     top: 190px;
     letter-spacing: .8px;
@@ -201,7 +226,7 @@ spline-viewer {
     /* top: -180px; */
     top: -115px;
     left: -470px;
-    animation:  showContent 0.5s 3.0s ease-in-out 1 forwards;
+    /* animation:  showContent 0.5s 1.3s ease-in-out 1 forwards; */
 }
 
 .avatar {

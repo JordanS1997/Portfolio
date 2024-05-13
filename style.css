@@ -521,7 +521,7 @@ a:hover{
 	fill: transparent;
 	stroke-width: 15px;
 	stroke-dasharray: 5100;
-	animation: text 5.5s 4.2s ease-out forwards;
+	animation: text 5.5s 3.2s ease-out forwards;
 	opacity: 0;
 	pointer-events: none;
 	z-index: 2;
