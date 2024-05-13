@@ -108,7 +108,9 @@
         <div class="filler"><a href="index.html" class="fillerFont">literally filler to make the svg clickable</a></div>
     </header>
 
-<div id="fpcontent">
+
+    <main>
+<div class="fpcontent">
 
     <div class="main">
         <div class="text">I'm a <span class="auto-type"></span></div>
@@ -128,9 +130,16 @@
 
     <button>Contact Me</button>
 
-</div>
+        <canvas id="dots">
 
-    <!-- Div Housing The 3d Model For The Homepage -->
+        </canvas>
+
+</div>
+</main>
+    
+
+
+<!-- Div Housing The 3d Model For The Homepage -->
     <div class="avatar">
         <spline-viewer loading-anim-type="spinner-small-dark"
             url="https://prod.spline.design/0MSwFnfVaYC3ZHtP/scene.splinecode"></spline-viewer>
@@ -139,6 +148,10 @@
 
     <!-- Preloader JavaScript -->
     <script src="preloader.js"></script>
+
+    <!-- Dots Javascript -->
+
+    <script src="dots.js"></script>
 
     <!-- literally a life saver for 3d imports, spline is so dope -->
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.1.5/build/spline-viewer.js"></script>

@@ -654,7 +654,7 @@ a:hover{
 	width: 355px;
 	border: 2px solid rgba(215, 215, 215, 0.499);
 	border-radius: 20px;
-	animation:positionNext 0.2s ease-in-out 1 forwards, shake 0.04s 0.20s ease-out 7,
+	animation:positionNext 0.2s ease-in-out 1 forwards, shake 0.04s 0.2s ease-out 7,
 		floating 5s 0.7s ease-in-out infinite;
 }
 
