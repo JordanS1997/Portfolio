@@ -4,23 +4,6 @@ html {
     overflow: hidden;
 }
 
-button {
-    cursor: pointer;
-    font-family: Poppins;
-    font-weight: 300;
-    font-size: 1rem;
-    letter-spacing: .9px;
-    border: none;
-    height: 50px;
-    width: 215px;
-    border-radius: 125px;
-    border-bottom: 3px solid #c4c4c4b0;
-    border-top: .1px solid #f0f0f0;
-    background-color: rgba(255, 255, 255, 0.327);
-    position: relative;
-    left: 50%;
-    bottom: -220px;
-}
 
 
 /* ------------------------------- Default Styles End------------------------------ */
@@ -51,16 +34,16 @@ button {
 
 
 @keyframes showContent {
-	from {
-		transform: translateY(50px);
-		filter: blur(30px);
-	}
+    from {
+        transform: translateY(50px);
+        filter: blur(30px);
+    }
 
-	to {
-		transform: translateY(0);
-		opacity: 1;
-		filter: blur(0);
-	}
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
 
@@ -98,23 +81,23 @@ button {
 
 /* ----------------------------------Nav Styles Begin------------------------------- */
 
-.svg2{
+.svg2 {
     position: relative;
-	top: 65.5px;
-	right: -45px;
-	height: 1px;
-	width: 1px;
-	/* border: 1px solid #ccc; */
-	transform: scale(370);
-	overflow: hidden;
-	stroke: black;
-	fill: transparent;
-	stroke-width: 15px;
-	stroke-dasharray: 5100;
-	animation: text 5.5s 1.7s ease-out forwards;
-	opacity: 0;
-	pointer-events: none;
-	z-index: 2;
+    top: 65.5px;
+    right: -45px;
+    height: 1px;
+    width: 1px;
+    /* border: 1px solid #ccc; */
+    transform: scale(370);
+    overflow: hidden;
+    stroke: black;
+    fill: transparent;
+    stroke-width: 15px;
+    stroke-dasharray: 5100;
+    animation: text 5.5s 1.7s ease-out forwards;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
 }
 
 /* -----------------------------------Nav Styles End-------------------------------- */
@@ -179,8 +162,34 @@ span {
     top: 1.5px;
 }
 
+button {
+    cursor: pointer;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: .9px;
+    border: none;
+    height: 50px;
+    width: 215px;
+    border-radius: 125px;
+    border-bottom: 3px solid #c4c4c4b0;
+    border-top: .1px solid #f0f0f0;
+    background-color: rgba(255, 255, 255, 0.327);
+    position: relative;
+    left: 45.5%;
+    bottom: -220px;
+    z-index: 1;
+    /* background: url();
+    background-position: 0px 350px;
+    background-repeat: repeat-x;
+    animation: filling 10s ease-in-out infinite; */
+}
 
 
+/* @keyframes filling {
+    50% {background-position: 3000px 0px;}
+    100% {background-position: 6000px 350px;}
+  } */
 /* ---------------------------- Typing Text Styles End---------------------------- */
 
 
@@ -208,7 +217,7 @@ article {
 }
 
 
-.fpcontent #dots{
+.fpcontent #dots {
     position: absolute;
     background-color: transparent;
     top: 0;
@@ -218,6 +227,8 @@ article {
     /* pointer-events: none; */
     /* filter: blur(1px); */
 }
+
+
 
 
 /* --------------------------------Body Content End----------------------------- */
@@ -239,13 +250,9 @@ spline-viewer {
     top: -115px;
     left: -30px;
     /* animation:  showContent 0.5s 1.3s ease-in-out 1 forwards; */
-    z-index: 2;
-    /* border: 1px red solid; */
-}
 
-.avatar {
-    width: 900px;
-    height: 100%;
+    /* border: 1px red solid; */
+
 }
 
 /* ---------------------------- Avatar Styles End--------------------------- */
