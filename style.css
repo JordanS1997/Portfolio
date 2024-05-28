@@ -1011,5 +1011,5 @@ a:hover{
 	position: relative;
 	/* transform: translateY(150px); */
 	top: 140px;
-	animation: float 10s ease-in-out infinite;
+	animation: float 7s ease-in-out infinite;
 }
