@@ -466,6 +466,7 @@ keyframes position2 {
 	text-wrap: wrap;
 	animation: float 10s infinite ease-in-out;
 	top: 400px;
+	pointer-events: none
 }
 
 /* ----------------------------Mobile Loader Styles End---------------------------- */
