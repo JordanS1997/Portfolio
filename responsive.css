@@ -379,7 +379,7 @@
         top: 63%;
     }
 
-    #fpcontent{
+    #fpcontent {
         position: sticky;
     }
 
@@ -391,23 +391,29 @@
 
     }
 
-.main .text {
-    font-size: 45px;
-    font-weight: 200;
-    position: relative;
-    top: 48px;
-}
+    .main .text {
+        font-size: 45px;
+        font-weight: 200;
+        position: relative;
+        top: 48px;
+    }
 
 
-    article{
+    article {
         top: 250px;
         width: 490px;
     }
 
-    button{
+    button {
         top: 280px;
         left: 445px;
         width: 20%;
     }
 
+}
+
+@media (max-width: 767px) {
+    #mobile{
+        opacity: 1;
+    }
 }

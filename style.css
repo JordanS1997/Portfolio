@@ -149,6 +149,7 @@ body {
 }
 
 
+
 /* ------------------------------------Default Styles End-------------------------------------- */
 
 
@@ -421,6 +422,16 @@ keyframes position2 {
 
 
 /* ----------------------------------Preloader Styles Start------------------------- */
+
+#preloader{
+    background: #fefefe url(images/1474.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+
 #preloader {
     opacity: 1;
     transition: opacity 1.5s ease-out;
@@ -431,6 +442,33 @@ keyframes position2 {
 	left: 5000px;
 }
 /* ----------------------------------Preloader Styles End--------------------------- */
+
+
+
+
+
+/* ---------------------------Mobile Loader Styles Begin--------------------------- */
+#mobile{
+    background: #fefefe;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 101;
+	opacity: 0;
+}
+
+#mobile p{
+	position: relative;
+	font-size: 56px;
+	font-weight: 300;
+	font-family: poppins;
+	text-align: center;
+	text-wrap: wrap;
+	animation: float 10s infinite ease-in-out;
+	top: 400px;
+}
+
+/* ----------------------------Mobile Loader Styles End---------------------------- */
 
 
 
