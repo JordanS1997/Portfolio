@@ -415,5 +415,6 @@
 @media (max-width: 767px) {
     #mobile{
         opacity: 1;
+        z-index: 101;
     }
 }
