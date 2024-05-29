@@ -415,13 +415,13 @@
 @media (max-width: 768px) {
     #mobile {
         visibility: visible;
-        z-index: 50;
+        z-index: 100;
     }
 }
 
 @media (max-width: 468px) {
     #mobile {
         visibility: visible;
-        z-index: 51;
+        z-index: 101;
     }
 }

@@ -466,7 +466,7 @@ keyframes position2 {
 	text-align: center;
 	text-wrap: wrap;
 	animation: float 10s infinite ease-in-out;
-	top: 400px;
+	bottom: -250px;
 	pointer-events: none
 }
 
