@@ -417,11 +417,18 @@
         visibility: visible;
         z-index: 100;
     }
+
+    .carousel {
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 468px) {
     #mobile {
         visibility: visible;
         z-index: 101;
+    }
+    .carousel {
+        visibility: hidden;
     }
 }
