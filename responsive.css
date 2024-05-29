@@ -412,9 +412,16 @@
 
 }
 
-@media (max-width: 767px) {
-    #mobile{
-        opacity: 1;
-        z-index: 101;
+@media (max-width: 768px) {
+    #mobile {
+        visibility: visible;
+        z-index: 50;
+    }
+}
+
+@media (max-width: 468px) {
+    #mobile {
+        visibility: visible;
+        z-index: 51;
     }
 }

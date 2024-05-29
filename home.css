@@ -249,6 +249,7 @@ spline-viewer {
     /* top: -180px; */
     top: -115px;
     left: -20px;
+    z-index: 1;
     /* animation:  showContent 0.5s 1.3s ease-in-out 1 forwards; */
 
     /* border: 1px red solid; */
