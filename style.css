@@ -439,7 +439,8 @@ keyframes position2 {
 
 #preloader.fade-out {
     opacity: 0;
-	left: 5000px;
+	pointer-events: none;
+	/* left: 5000px; */
 }
 /* ----------------------------------Preloader Styles End--------------------------- */
 
